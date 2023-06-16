@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: whitesmoke;">
+    <div class="discription">
+        <h1>LET'S PLOGGING!!!</h1>
+        <h2>プロギングとは？？</h2>
+        <h3>プロギングとはジョギングをしながらごみ拾いをするというもので、<br>
+            身体と心、そして街もきれいになる、新しいフィットネスです。</h3>
+        <h3>みんなの力で、灰色の街を緑に変えよう！</h3>
+    </div>
+    <!------Direction Module入手------------->
+    <div class="directionsContainer">
+        <div id="directionsPanel"></div>
+        <div id="directionsItinerary"></div>
+    </div>
+    <div id="myMap" style='width:100%;height:350px;'></div>
+
+    <!----------スタート、ストップボタン追加----------------->
+     <button id="start_btn" class="btn1">スタート</button>
+     <p style="text-decoration: underline;">プロギング開始時に、「スタート」ボタンを押してね。楽しんで！</p>
+     <button id="stop_btn" class="btn2">ストップ</button>
+     <p style="text-decoration: underline;">プロギング終了時に、「ストップ」ボタンを押してね。お疲れ様！</p>
+     <!-----00:ルート表示ボタンを追加------->
+     <button id="write_btn" class="btn3">ルート表示</button>
+     <p style="text-decoration: underline;">「ストップ」ボタンの次に「ルート表示」ボタンを押してね。素晴らしい！</p>
+
+<!------bingmaps起動-------------->
+<script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=As3BprQNSqenlojV4JSucwGMRx7w-8Svi1Vvv0L_sW1I_BajH-yHZg3jben9Y1vg' async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src='sample.js'></script>
+
+</body>
+<footer class="gazou">
+ <img src="gazou.jpeg" alt="">
+</footer>
+</html>
